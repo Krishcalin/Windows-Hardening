@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e17"/>
+      <stop offset="50%" style="stop-color:#0f1729"/>
+      <stop offset="100%" style="stop-color:#111827"/>
+    </linearGradient>
+    <!-- Top accent bar — Windows blue -->
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0078d4"/>
+      <stop offset="50%" style="stop-color:#0091ff"/>
+      <stop offset="100%" style="stop-color:#00b4d8"/>
+    </linearGradient>
+    <!-- Shield fill glow -->
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#0078d4;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#0078d4;stop-opacity:0"/>
+    </radialGradient>
+    <!-- Windows logo gradient -->
+    <linearGradient id="winblue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0078d4"/>
+      <stop offset="100%" style="stop-color:#00b4d8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="200" rx="12" fill="url(#bg)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="800" height="3" rx="1.5" fill="url(#accent)"/>
+
+  <!-- Subtle dot grid pattern -->
+  <g opacity="0.025" fill="#ffffff">
+    <circle cx="40" cy="40" r="1"/><circle cx="80" cy="40" r="1"/><circle cx="120" cy="40" r="1"/><circle cx="160" cy="40" r="1"/>
+    <circle cx="40" cy="80" r="1"/><circle cx="80" cy="80" r="1"/><circle cx="120" cy="80" r="1"/><circle cx="160" cy="80" r="1"/>
+    <circle cx="40" cy="120" r="1"/><circle cx="80" cy="120" r="1"/><circle cx="120" cy="120" r="1"/><circle cx="160" cy="120" r="1"/>
+    <circle cx="40" cy="160" r="1"/><circle cx="80" cy="160" r="1"/><circle cx="120" cy="160" r="1"/><circle cx="160" cy="160" r="1"/>
+    <circle cx="640" cy="40" r="1"/><circle cx="680" cy="40" r="1"/><circle cx="720" cy="40" r="1"/><circle cx="760" cy="40" r="1"/>
+    <circle cx="640" cy="80" r="1"/><circle cx="680" cy="80" r="1"/><circle cx="720" cy="80" r="1"/><circle cx="760" cy="80" r="1"/>
+    <circle cx="640" cy="120" r="1"/><circle cx="680" cy="120" r="1"/><circle cx="720" cy="120" r="1"/><circle cx="760" cy="120" r="1"/>
+    <circle cx="640" cy="160" r="1"/><circle cx="680" cy="160" r="1"/><circle cx="720" cy="160" r="1"/><circle cx="760" cy="160" r="1"/>
+  </g>
+
+  <!-- Glow behind shield -->
+  <ellipse cx="100" cy="100" rx="60" ry="60" fill="url(#glow)"/>
+
+  <!-- Shield with Windows logo + lock -->
+  <g transform="translate(55, 40)">
+    <!-- Outer shield -->
+    <path d="M45 5 L87 21 L87 60 C87 86 68 100 45 107 C22 100 3 86 3 60 L3 21 Z"
+          fill="none" stroke="url(#winblue)" stroke-width="2.5" opacity="0.85"/>
+    <!-- Inner shield fill -->
+    <path d="M45 13 L79 26 L79 58 C79 79 64 91 45 97 C26 91 11 79 11 58 L11 26 Z"
+          fill="rgba(0,120,212,0.05)"/>
+
+    <!-- Windows 4-pane logo inside shield -->
+    <g transform="translate(27, 35)">
+      <!-- Top-left pane -->
+      <rect x="0" y="0" width="15" height="13" rx="1.5" fill="#0078d4" opacity="0.9"/>
+      <!-- Top-right pane -->
+      <rect x="18" y="0" width="15" height="13" rx="1.5" fill="#0091ff" opacity="0.85"/>
+      <!-- Bottom-left pane -->
+      <rect x="0" y="16" width="15" height="13" rx="1.5" fill="#00b4d8" opacity="0.8"/>
+      <!-- Bottom-right pane -->
+      <rect x="18" y="16" width="15" height="13" rx="1.5" fill="#0078d4" opacity="0.75"/>
+    </g>
+
+    <!-- Lock icon overlay (bottom of shield) -->
+    <g transform="translate(36, 72)">
+      <rect x="0" y="6" width="18" height="13" rx="3" fill="#22c55e" opacity="0.85"/>
+      <path d="M4 6 L4 3 C4 0.5 6 -2 9 -2 C12 -2 14 0.5 14 3 L14 6"
+            fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" opacity="0.85"/>
+      <circle cx="9" cy="12" r="1.8" fill="#0a0e17" opacity="0.7"/>
+    </g>
+  </g>
+
+  <!-- Title -->
+  <text x="170" y="72" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="30" font-weight="700" fill="#e2e8f0" letter-spacing="-0.5">Windows Hardening</text>
+
+  <!-- Subtitle -->
+  <text x="170" y="105" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="16" font-weight="500" fill="#0078d4">CIS Benchmark Compliance</text>
+
+  <!-- Description line 1 -->
+  <text x="170" y="135" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="13" fill="#64748b">Security hardening &amp; compliance scanning for Windows 11 Enterprise,</text>
+  <!-- Description line 2 -->
+  <text x="170" y="153" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="13" fill="#64748b">Windows Server 2016, 2019 &amp; 2022  |  1,200+ CIS Controls</text>
+
+  <!-- Badge: PowerShell -->
+  <rect x="610" y="55" width="100" height="26" rx="13" fill="rgba(0,120,212,0.08)" stroke="#0078d4" stroke-width="1" opacity="0.85"/>
+  <text x="660" y="73" font-family="'Cascadia Code', 'Consolas', monospace" font-size="11" fill="#0078d4" text-anchor="middle">PowerShell</text>
+
+  <!-- Badge: CIS -->
+  <rect x="610" y="90" width="100" height="26" rx="13" fill="rgba(34,197,94,0.08)" stroke="#22c55e" stroke-width="1" opacity="0.85"/>
+  <text x="660" y="108" font-family="'Cascadia Code', 'Consolas', monospace" font-size="11" fill="#22c55e" text-anchor="middle">CIS Benchmark</text>
+
+  <!-- Badge: Read-Only -->
+  <rect x="610" y="125" width="100" height="26" rx="13" fill="rgba(245,158,11,0.08)" stroke="#f59e0b" stroke-width="1" opacity="0.85"/>
+  <text x="660" y="143" font-family="'Cascadia Code', 'Consolas', monospace" font-size="11" fill="#f59e0b" text-anchor="middle">GPO-Ready</text>
+
+  <!-- Bottom subtle line -->
+  <rect x="0" y="197" width="800" height="3" rx="1.5" fill="url(#accent)" opacity="0.3"/>
+</svg>
