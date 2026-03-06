@@ -1,4 +1,20 @@
-# Windows-Hardening
+<p align="center">
+  <img src="docs/banner.svg" alt="Windows Hardening" width="800"/>
+</p>
+
+<p align="center">
+  <strong>CIS Benchmark-based security hardening &amp; compliance scanning for Windows environments</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/PowerShell-5.1%2B-0078d4?style=flat-square&logo=powershell&logoColor=white" alt="PowerShell"/>
+  <img src="https://img.shields.io/badge/CIS_Benchmarks-v3.0%E2%80%93v4.0-22c55e?style=flat-square" alt="CIS Benchmarks"/>
+  <img src="https://img.shields.io/badge/Controls-1%2C200%2B-f59e0b?style=flat-square" alt="Controls"/>
+  <img src="https://img.shields.io/badge/Win_11_%7C_Server_2016%2F19%2F22-00b4d8?style=flat-square&logo=windows&logoColor=white" alt="Platforms"/>
+  <img src="https://img.shields.io/github/license/Krishcalin/Windows-Hardening?style=flat-square&color=64748b" alt="License"/>
+</p>
+
+---
 
 CIS Benchmark-based security hardening and compliance scanning for Windows environments. Includes an **active hardening script** for Windows 11 Enterprise and **read-only compliance scanners** for Windows Server 2016, 2019, and 2022.
 
